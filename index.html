@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Loja de Móveis</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Loja de Móveis</h1>
+    <div class="buttons-header">
+        <button id="cadastroBtn">Cadastro</button>
+        <button id="loginBtn">Login</button>
+        <button id="verCarrinho">Carrinho (<span id="qtCarrinho">0</span>)</button>
+    </div>
+</header>
+
+<section id="filtros">
+    <h2>Filtros</h2>
+    <label for="tipoMóvel">Tipo de Móvel:</label>
+    <select id="tipoMóvel">
+        <option value="todos">Todos</option>
+        <option value="cadeira">Cadeiras</option>
+        <option value="mesa">Mesas</option>
+        <option value="estante">Estantes</option>
+        <option value="cama">Camas</option>
+        <option value="armário">Armários</option>
+    </select>
+
+    <label for="material">Material:</label>
+    <select id="materialFiltro">
+        <option value="todos">Todos</option>
+        <option value="madeira">Madeira</option>
+        <option value="metal">Metal</option>
+        <option value="plastico">Plástico</option>
+    </select>
+
+    <button id="filtrarBtn">Filtrar</button>
+</section>
+
+<section id="principais">
+    <h2>Principais Peças Mais Vendidas</h2>
+    <div class="móveis" id="principaisVendas"></div>
+</section>
+
+<section id="produtos">
+    <h2>Móveis</h2>
+    <div class="móveis" id="listaProdutos"></div>
+</section>
+
+<!-- Modais -->
+<div id="modalCadastro" class="modal">
+    <div class="modal-content">
+        <span class="fechar" id="fecharCadastro">&times;</span>
+        <h2>Cadastro</h2>
+        <form id="formCadastro">
+            <input type="text" id="nome" placeholder="Nome" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="senha" placeholder="Senha" required />
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</div>
+
+<div id="modalLogin" class="modal">
+    <div class="modal-content">
+        <span class="fechar" id="fecharLogin">&times;</span>
+        <h2>Login</h2>
+        <form id="formLogin">
+            <input type="email" id="emailLogin" placeholder="Email" required />
+            <input type="password" id="senhaLogin" placeholder="Senha" required />
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</div>
+
+<div id="modalCarrinho" class="modal">
+    <div class="modal-content">
+        <span class="fechar" id="fecharCarrinho">&times;</span>
+        <h2>Carrinho</h2>
+        <div id="itensCarrinho"></div>
+        <button id="finalizarCompra">Finalizar Compra</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
