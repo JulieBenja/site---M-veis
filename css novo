@@ -1,0 +1,130 @@
+/* ... (Mantenha o CSS anterior) ... */
+
+/* NOVIDADE: Banner de Destaque */
+#banner-destaque {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); /* Fundo com gradiente */
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.banner-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+    border-bottom: none; /* Remove a linha azul dos títulos das seções */
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.banner-content button {
+    background-color: #f39c12; /* Laranja de Ação */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.banner-content button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* ... (Mantenha o CSS para Filtros, Cards de Móveis e Modais) ... */
+
+/* NOVIDADE: Rodapé */
+footer {
+    background-color: #2c3e50; /* Cor principal escura */
+    color: #ecf0f1;
+    padding: 40px 20px 20px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li a,
+.footer-section p {
+    color: #bdc3c7;
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.2s;
+    display: block;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    display: inline-block;
+    color: #fff;
+    background-color: #3498db;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.social-icons a:hover {
+    background-color: #f39c12;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #95a5a6;
+}
+
+/* Responsividade adicional para o rodapé */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        margin-top: 20px;
+    }
+}
