@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Loja de Móveis | Design & Conforto</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1 class="logo">Móveis **Design**</h1>
+        <nav class="buttons-header">
+            <button id="cadastroBtn">Cadastro</button>
+            <button id="loginBtn">Login</button>
+            <button id="verCarrinho">🛒 Carrinho (<span id="qtCarrinho">0</span>)</button>
+        </nav>
+    </div>
+</header>
+
+<section id="banner-destaque">
+    <div class="banner-content">
+        <h2>Conforto e Estilo para o seu Lar</h2>
+        <p>Aproveite nossa promoção de inauguração com até **30% OFF** em toda linha Madeira.</p>
+        <button onclick="document.getElementById('produtos').scrollIntoView()">Ver Produtos Agora</button>
+    </div>
+</section>
+
+<main class="main-content">
+    
+    <section id="filtros">
+        <h2>Filtre sua busca:</h2>
+        
+        <div class="filter-group">
+            <label for="tipoMóvel">Tipo de Móvel:</label>
+            <select id="tipoMóvel">
+                <option value="todos">Todos</option>
+                <option value="cadeira">Cadeiras</option>
+                <option value="mesa">Mesas</option>
+                <option value="estante">Estantes</option>
+                <option value="cama">Camas</option>
+                <option value="armário">Armários</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="materialFiltro">Material:</label>
+            <select id="materialFiltro">
+                <option value="todos">Todos</option>
+                <option value="madeira">Madeira</option>
+                <option value="metal">Metal</option>
+                <option value="plastico">Plástico</option>
+            </select>
+        </div>
+
+        <button id="filtrarBtn">Aplicar Filtros</button>
+    </section>
+
+    <section id="principais" class="secao-produtos">
+        <h2>✨ Principais Peças Mais Vendidas</h2>
+        <div class="móveis" id="principaisVendas"></div>
+    </section>
+
+    <section id="produtos" class="secao-produtos">
+        <h2>🛋️ Todos os Móveis</h2>
+        <div class="móveis" id="listaProdutos"></div>
+    </section>
+    
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="#principais">Mais Vendidos</a></li>
+                <li><a href="#produtos">Todos os Produtos</a></li>
+                <li><a href="#" id="openCadastroFooter">Cadastre-se</a></li>
+                <li><a href="#" id="openLoginFooter">Login</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>Email: contato@moveisdesign.com.br</p>
+            <p>Telefone: (99) 99999-9999</p>
+            <p>Endereço: Rua do Conforto, 123 - Design City</p>
+        </div>
+        <div class="footer-section">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Móveis Design. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
